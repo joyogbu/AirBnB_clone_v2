@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route("/", strict_slashes=False)
 
 def hello_hbnb():
-"""defining the finction"""
+	"""defining the finction"""
 	return "Hello HBNB!"
 
 
