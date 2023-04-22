@@ -17,13 +17,13 @@ def hello_hnb2():
 	return "HBNB"
 
 @app.route("/c/<text>", strict_slashes=False)
-def hello3(text='is cool'):
+def hello3(text):
 	"""define the function"""
 	return "C %s" % escape(text.replace('_', ' '))
 
 @app.route("/python", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
-def hello4(text):
+def hello4(text='is_cool'):
 	"""defining the function"""
 	return "Python %s" % escape(text.replace('_', ' '))
 	
